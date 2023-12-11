@@ -6,15 +6,15 @@
 sketchybar --add event input_change 'AppleSelectedInputSourcesChangedNotification' \
 	--add item input right --set input script="$PLUGIN_DIR/input.sh" \
 	icon=󰥻 \
-	icon.font="$FONT:Bold:18.0" \
-	icon.color=$WHITE \
-	icon.padding_left=10 \
-	icon.padding_right=5 \
+	icon.font="$FONT:Bold:$ICON_SIZE" \
+	icon.color=$ICON_COLOR \
+	icon.padding_left=$ICON_PADDING \
+	icon.padding_right=$ICON_PADDING \
 	label.color=$WHITE \
-	label.font="$FONT:Bold:14.0" \
-	label.padding_right=10 \
-	background.height=26 \
+	label.font="$FONT:Bold:$FONT_SIZE" \
+	label.padding_right=$LABEL_PADDING_RIGHT \
+	background.height=$BACKGROUND_HEIGHT \
 	background.color=$BACKGROUND \
 	background.corner_radius=$CORNER_RADIUS \
-	background.padding_right=5 \
+	background.padding_right=$BACKGROUND_PADDING_RIGHT \
 	--subscribe input input_change

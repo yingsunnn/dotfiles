@@ -3,14 +3,14 @@
 sketchybar -m --add item mem right                         \
               --set mem update_freq=1                      \
                         script="$PLUGIN_DIR/mem.sh"        \
-                        icon.font="$FONT:Bold:16.0"        \
-                        icon.padding_left=5                \
-                        icon.padding_right=5               \
-                        icon.color=$WHITE \
+                        icon.font="$FONT:Bold:$ICON_SIZE"        \
+                        icon.padding_left=$ICON_PADDING                \
+                        icon.padding_right=$ICON_PADDING               \
+                        icon.color=$ICON_COLOR \
                         label.color=$WHITE \
-                        label.font="$FONT:Bold:14.0" \
-                        label.padding_right=10 \
-                        background.height=26 \
+                        label.font="$FONT:Bold:$FONT_SIZE" \
+                        label.padding_right=$LABEL_PADDING_RIGHT \
+                        background.height=$BACKGROUND_HEIGHT \
                         background.color=$BACKGROUND \
                         background.corner_radius=$CORNER_RADIUS \
-                        background.padding_right=5
+                        background.padding_right=$BACKGROUND_PADDING_RIGHT
