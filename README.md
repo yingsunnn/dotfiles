@@ -14,3 +14,20 @@
   brew install ifstat
   ```
 - Find the correct network card (command: ifstat) and update plugins `network_down.sh` and `network_up.sh` 
+  ```
+  # if the network card is en1
+  UPDOWN=$(ifstat -i "en1" -b 0.1 1 | tail -n1)
+  ```
+
+## Commands
+- start
+  ```shell
+  brew services start sketchybar
+  ```
+  ```shell
+  sketchybar
+  ```
+- stop
+  ```shell
+  brew services stop sketchybar
+  ```
