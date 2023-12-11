@@ -31,32 +31,33 @@ sketchybar --bar height=25 \
 	notch_width=200 \
 	--default updates=when_shown \
 	icon.font="$FONT:Bold:14.0" \
-	icon.color=$ICON_COLOR \
+	icon.color=$$WHITE \
 	icon.padding_left=$PADDINGS \
 	icon.padding_right=$PADDINGS \
 	label.font="$FONT:SemiBold:13.0" \
-	label.color=$LABEL_COLOR \
+	label.color=$WHITE \
 	label.padding_left=$PADDINGS \
 	label.padding_right=$PADDINGS \
 	background.padding_right=$PADDINGS \
 	background.padding_left=$PADDINGS \
 	popup.background.border_width=2 \
 	popup.background.corner_radius=11 \
-	popup.background.border_color=$POPUP_BORDER_COLOR \
-	popup.background.color=$POPUP_BACKGROUND_COLOR \
+	popup.background.border_color=$WHITE \
+	popup.background.color=$BACKGROUND \
 	popup.background.shadow.drawing=$SHADOW
 
 source "$ITEM_DIR/apple.sh"
 source "$ITEM_DIR/spaces.sh"
 source "$ITEM_DIR/front_app.sh"
-source "$ITEM_DIR/cpu.sh"
-source "$ITEM_DIR/mem.sh"
-source "$ITEM_DIR/disk.sh"
-source "$ITEM_DIR/volume.sh"
+
 source "$ITEM_DIR/input.sh"
+source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/weather.sh"
 source "$ITEM_DIR/network_down.sh"
 source "$ITEM_DIR/network_up.sh"
+source "$ITEM_DIR/disk.sh"
+source "$ITEM_DIR/mem.sh"
+source "$ITEM_DIR/cpu.sh"
 
 sketchybar --update
 

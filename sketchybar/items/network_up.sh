@@ -11,6 +11,6 @@ sketchybar -m --add item network_up right                         \
                         label.font="$FONT:Bold:14.0" \
                         label.padding_right=10 \
                         background.height=26 \
-                        background.color=$SURFACE \
+                        background.color=$BACKGROUND \
                         background.corner_radius=$CORNER_RADIUS \
                         background.padding_right=5

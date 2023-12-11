@@ -14,17 +14,18 @@ for i in "${!SPACE_ICONS[@]}"; do
 		icon.font="$FONT:Bold:16.0" \
 		icon.padding_left=30 \
 		icon.padding_right=30 \
-		icon.highlight_color=$LOVE \
+		icon.highlight_color=$HIGHLIGHT \
+		icon.color=$WHITE \
 		background.padding_left=-11 \
 		background.padding_right=-11 \
 		background.height=26 \
 		background.corner_radius=$CORNER_RADIUS \
-		background.color=$BLACK \
+		background.color=$BACKGROUND \
 		background.drawing=on \
 		label.background.drawing=on \
 		label.padding_right=20 \
 		label.drawing=off \
-		label.color=$PINE \
+		label.color=$WHITE \
 		script="$PLUGIN_DIR/space.sh" \
 		click_script="$SPACE_CLICK_SCRIPT"
 done
@@ -37,7 +38,7 @@ sketchybar --add item separator left \
 	background.padding_left=26 \
 	background.padding_right=15 \
 	label.drawing=off \
-	label.color=$PINE \
+	label.color=$WHITE \
 	associated_display=active \
-	icon.color=$YELLOW
+	icon.color=$WHITE
 	

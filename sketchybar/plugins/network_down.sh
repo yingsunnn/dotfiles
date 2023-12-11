@@ -5,9 +5,11 @@ DOWN=$(echo $UPDOWN | awk "{ print \$1 }" | cut -f1 -d ".")
 
 DOWN_FORMAT=""
 if [ "$DOWN" -gt "999" ]; then
-  DOWN_FORMAT=$(echo $DOWN | awk '{ printf "%03.0f Mbps", $1 / 1000}')
+  DOWN_FORMAT=$(echo $DOWN | awk '{ printf "%03.0f Mb", $1 / 1000}')
 else
-  DOWN_FORMAT=$(echo $DOWN | awk '{ printf "%03.0f kbps", $1}')
+  DOWN_FORMAT=$(echo $DOWN | awk '{ printf "%03.0f kb", $1}')
 fi
 
-sketchybar -m --set $NAME label="$DOWN_FORMAT" icon.highlight=$(if [ "$DOWN" -gt "0" ]; then echo "on"; else echo "off"; fi)
+NETWORK_DOWN_ICON=
+
+sketchybar -m --set $NAME label="$DOWN_FORMAT" icon="$NETWORK_DOWN_ICON"
