@@ -23,6 +23,4 @@ else
 	esac
 fi
 
-sketchybar -m \
-	--set $NAME icon=$ICON \
-	--set $NAME label="$VOLUME%"
+sketchybar -m --set $NAME icon=$ICON label="$VOLUME%"

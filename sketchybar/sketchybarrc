@@ -35,12 +35,16 @@ sketchybar --bar height=25 \
 	notch_width=200 
 
 source "$ITEM_DIR/apple.sh"
+source "$ITEM_DIR/username.sh"
 source "$ITEM_DIR/spaces.sh"
 source "$ITEM_DIR/front_app.sh"
 
+source "$ITEM_DIR/clock.sh"
 source "$ITEM_DIR/input.sh"
 source "$ITEM_DIR/volume.sh"
 source "$ITEM_DIR/weather.sh"
+source "$ITEM_DIR/uptime.sh"
+source "$ITEM_DIR/ip.sh"
 source "$ITEM_DIR/network_down.sh"
 source "$ITEM_DIR/network_up.sh"
 source "$ITEM_DIR/disk.sh"
