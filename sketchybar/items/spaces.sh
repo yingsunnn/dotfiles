@@ -30,11 +30,11 @@ done
 
 sketchybar --set space.1 background.padding_left=-1
 
-sketchybar --add item separator left \
-	--set separator icon= \
+sketchybar --add item separator1 left \
+	--set separator1 icon= \
 	icon.font="$FONT:Regular:$ICON_SIZE" \
-	background.padding_left=30 \
-	background.padding_right=18 \
+	background.padding_left=16 \
+	background.padding_right=5 \
 	label.drawing=off \
 	label.color=$BACKGROUND \
 	associated_display=active \

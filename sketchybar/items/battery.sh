@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
-sketchybar -m --add item clock right                         \
-              --set clock update_freq=50                      \
-                        script="$PLUGIN_DIR/clock.sh" \
+sketchybar -m --add item battery right                         \
+              --set battery update_freq=21600                      \
+                        script="$PLUGIN_DIR/battery.sh" \
                         icon.font="$FONT:Bold:$ICON_SIZE"        \
                         icon.padding_left=$ICON_PADDING                \
                         icon.padding_right=$ICON_PADDING               \
