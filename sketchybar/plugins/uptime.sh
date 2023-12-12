@@ -12,7 +12,7 @@ UP_TIME=`awk -v time=$TIME_AGO \
  printf("%.0f:%.0f:%.0f", hours, minutes, seconds); 
  exit }'`
 
-UP_DAYS=`expr $TIME_AGO / 60 / 60 % 24`
+UP_DAYS=`expr $TIME_AGO / 60 / 60 / 24`
 
 UP_DAYS_TIME=""
 if [ $UP_DAYS -gt 0 ]

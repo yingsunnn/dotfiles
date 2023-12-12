@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 sketchybar -m --add item clock right                         \
-              --set clock update_freq=50                      \
+              --set clock update_freq=1                      \
                         script="$PLUGIN_DIR/clock.sh" \
                         icon.font="$FONT:Bold:$ICON_SIZE"        \
                         icon.padding_left=$ICON_PADDING                \
