@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 sketchybar -m --add item uptime right                         \
-              --set uptime update_freq=10                      \
+              --set uptime update_freq=1                     \
                         script="$PLUGIN_DIR/uptime.sh" \
                         icon.font="$FONT:Bold:$ICON_SIZE"        \
                         icon.padding_left=$ICON_PADDING                \
