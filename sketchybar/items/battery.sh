@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 sketchybar -m --add item battery right                         \
-              --set battery update_freq=21600                      \
+              --set battery update_freq=30                      \
                         script="$PLUGIN_DIR/battery.sh" \
                         icon.font="$FONT:Bold:$ICON_SIZE"        \
                         icon.padding_left=$ICON_PADDING                \

@@ -17,7 +17,7 @@ else
     ;;
     *) ICON=""
   esac
-  $PERCENTAGE=${$PERCENTAGE%}
+  PERCENTAGE=$PERCENTAGE""
 fi
 
 if [[ $CHARGING != "" ]]; then

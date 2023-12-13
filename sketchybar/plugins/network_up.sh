@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-UPDOWN=$(ifstat -i "en1" -b 0.1 1 | tail -n1)
+UPDOWN=$(ifstat -i "en0" -b 0.1 1 | tail -n1)
 UP=$(echo $UPDOWN | awk "{ print \$2 }" | cut -f1 -d ".")
 
 UP_FORMAT=""
