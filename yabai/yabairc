@@ -5,11 +5,11 @@ yabai -m config layout bsp
 yabai -m config window_placement second_child
 
 # padding set to 8px
-yabai -m config top_padding 8
-yabai -m config bottom_padding 8
-yabai -m config left_padding 8
-yabai -m config right_padding 8
-yabai -m config window_gap 8
+yabai -m config top_padding 5
+yabai -m config bottom_padding 5
+yabai -m config left_padding 5
+yabai -m config right_padding 5
+yabai -m config window_gap 5
 
 # -- mouse settings --
 
@@ -27,14 +27,13 @@ yabai -m config mouse_action2 move
 yabai -m mouse_drop_action swap
 
 # disable specific apps
-yabai -m rule --add app="^(Easydict|Shottr|JetBrains Toolbox|Ivanti Secure Access Client|Calculator|Software Update|Dictionary|VLC|IINA|System Preferences|System Settings|zoom.us|Photo Booth|Archive Utility|App Store|Steam|Alfred|Activity Monitor)$" manage=off
+yabai -m rule --add app="^(Stats|Easydict|Shottr|JetBrains Toolbox|Ivanti Secure Access Client|Calculator|Software Update|Dictionary|VLC|IINA|System Preferences|System Settings|zoom.us|Photo Booth|Archive Utility|App Store|Steam|Alfred|Activity Monitor)$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 yabai -m rule --add label="Select file to save to" app="^Inkscape$" title="Select file to save to" manage=off
 
 # sketchybar at bottom 
-yabai -m config external_bar all:0:22
+yabai -m config external_bar all:0:25
 
 echo "yabai configuration loaded.."
-
