@@ -7,3 +7,6 @@
 !skhd/
 !yabai/
 !sketchybar/
+!images/
+
+*.DS_Store
