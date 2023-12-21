@@ -23,7 +23,7 @@ shift + cmd - y : yabai -m space --mirror y-axis
 shift + cmd - x : yabai -m space --mirror x-axis
 
 # toggle window float
-shift + cmd - p : yabai -m window --toggle float --grid 4:4:1:1:2:2
+# shift + cmd - p : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # toggle window split type
 shift + cmd - s : yabai -m window --toggle split
