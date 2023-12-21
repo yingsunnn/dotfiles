@@ -19,9 +19,9 @@
   ```shell
   brew install ifstat
   ```
-- Find the correct network card (command: ifstat) and update plugins `/plugins/network_down.sh` and `/plugins/network_up.sh` 
+- Find the correct network (command: ifstat) and update plugins `/plugins/network_down.sh` and `/plugins/network_up.sh` 
   ```
-  # if the network card is en1
+  # if the network is en1:
   UPDOWN=$(ifstat -i "en1" -b 0.1 1 | tail -n1)
   ```
 
