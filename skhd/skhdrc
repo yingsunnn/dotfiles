@@ -39,16 +39,16 @@ shift + cmd - e : yabai -m space --balance
 
 # Resize window
 # increase window size
-shift + cmd - h : yabai -m window --resize left:-20:0 --resize right:20:0
-shift + cmd - j : yabai -m window --resize bottom:0:20 --resize top:0:-20
-#shift + cmd - k : yabai -m window --resize top:0:-20
-#shift + cmd - l : yabai -m window --resize right:20:0
+ctrl + cmd - left : yabai -m window --resize left:-20:0 --resize right:20:0
+ctrl + cmd - up : yabai -m window --resize bottom:0:20 --resize top:0:-20
+# shift + cmd - k : yabai -m window --resize top:0:-20
+# shift + cmd - l : yabai -m window --resize right:20:0
 
 # decrease window size
-shift + cmd - l : yabai -m window --resize left:20:0 --resize right:-20:0
-shift + cmd - k : yabai -m window --resize bottom:0:-20 --resize top:0:20
-#shift + cmd - k : yabai -m window --resize top:0:20
-#shift + cmd - l : yabai -m window --resize right:-20:0
+ctrl + cmd - right : yabai -m window --resize left:20:0 --resize right:-20:0
+ctrl + cmd - down : yabai -m window --resize bottom:0:-20 --resize top:0:20
+# shift + cmd - up : yabai -m window --resize top:0:20
+# shift + cmd - down : yabai -m window --resize right:-20:0
 
 
 # -- Moving Windows Around --
