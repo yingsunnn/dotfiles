@@ -17,7 +17,7 @@ yabai -m config window_gap 5
 # yabai -m config mouse_follows_focus on
 
 # modifier for clicking and dragging with mouse
-yabai -m config mouse_modifier alt
+yabai -m config mouse_modifier ctrl
 # set modifier + left-click drag to move window
 yabai -m config mouse_action1 resize
 # set modifier + right-click drag to resize window
@@ -27,7 +27,7 @@ yabai -m config mouse_action2 move
 yabai -m mouse_drop_action swap
 
 # disable specific apps
-yabai -m rule --add app="^(Stats|Easydict|Shottr|JetBrains Toolbox|Ivanti Secure Access Client|Calculator|Software Update|Dictionary|VLC|IINA|System Preferences|System Settings|zoom.us|Photo Booth|Archive Utility|App Store|Steam|Alfred|Activity Monitor)$" manage=off
+yabai -m rule --add app="^(WeChat|Stats|Easydict|Shottr|JetBrains Toolbox|Ivanti Secure Access Client|Calculator|Software Update|Dictionary|VLC|IINA|System Preferences|System Settings|zoom.us|Photo Booth|Archive Utility|App Store|Steam|Alfred|Activity Monitor)$" manage=off
 yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
 yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
 yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
